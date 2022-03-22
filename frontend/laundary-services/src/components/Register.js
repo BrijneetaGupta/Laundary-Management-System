@@ -2,12 +2,13 @@ import React from 'react'
 import '../assets/css/register.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 
 const Register = () =>{
     return(
         <>            
-            <section>
+            <section id="register">
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-md-3 login-div bg-white'>
@@ -79,6 +80,7 @@ const Register = () =>{
                     </div>
                 </div>
             </section>
+            <Footer></Footer>
         </>
     )
 }

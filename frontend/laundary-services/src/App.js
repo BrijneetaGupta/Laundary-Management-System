@@ -26,7 +26,6 @@ const App = () => {
         <Route path="/register" element={<Register />} />        
       </Routes>
       
-      <Footer></Footer>
       <UserFooter></UserFooter>
 
     </div>

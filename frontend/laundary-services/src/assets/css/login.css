@@ -1,4 +1,4 @@
-h1{
+#login h1{
     text-align: left;
     font: normal normal 900 100px/120px Avenir;
     letter-spacing: 0px;
@@ -6,7 +6,7 @@ h1{
     text-transform: capitalize;
     opacity: 1;
 }
-.login-section h3{
+#login .login-section h3{
     text-align: left;
     font: normal normal normal 32px/60px Avenir;
     letter-spacing: 1.28px;
@@ -14,7 +14,7 @@ h1{
     text-transform: uppercase;
     opacity: 1;
 }
-h4{
+#login h4{
     text-align: left;
     font: normal normal normal 20px/26px Avenir-Book;
     letter-spacing: 0.8px;
@@ -22,7 +22,7 @@ h4{
     text-transform: capitalize;
     opacity: 1;
 }
-h6{
+#login h6{
     text-align: left;
     font: normal normal normal 16px/26px Avenir-Book;
     letter-spacing: 0.64px;
@@ -30,10 +30,10 @@ h6{
     text-transform: capitalize;
     opacity: 1;
 }
-button{
+#login  button{
     float: left;
 }
-.register-section{
+#login .register-section{
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
@@ -41,7 +41,7 @@ button{
     width: 40% !important;
     margin: auto;
 }
-.login-section{
+#login .login-section{
     background: #B9C0FD1A 0% 0% no-repeat padding-box;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@ button{
     opacity: 1;
 }
 /* Login form */
-.form-control{
+#login .form-control{
     width:64%;
     padding: 1.95rem .3rem .35rem 0;
     background-color: inherit;
@@ -63,14 +63,18 @@ button{
     color: #77838F;
     opacity: 1;
 }
-.form-control:focus{
+#login .form-control:focus{
     background-color: inherit;
     box-shadow: none;
 }
-small{
+#login small{
     font: normal normal normal 16px/26px Avenir;
     letter-spacing: 0.64px;
     color: #4552C1;
     text-transform: capitalize;
     opacity: 1;
+}
+#login .btn{
+    width: 150px;
+    height: 50px;
 }
