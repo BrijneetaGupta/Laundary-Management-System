@@ -1,0 +1,30 @@
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 57px;
+    background: #5861AE 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #fff;
+    padding: 16px;
+    text-decoration: none;
+  }
+  .sidebar a:first-child{
+    margin-top: 30px;
+  }
+   
+  .sidebar a.active {
+    background-color: #fff;
+    color: #5861AE;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }

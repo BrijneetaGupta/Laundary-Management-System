@@ -1,0 +1,77 @@
+.login-div h2{
+    text-align: left;
+    font: normal normal 900 50px/80px Avenir;
+    letter-spacing: 2.48px;
+    color: #5861AE;
+    text-transform: capitalize;
+    opacity: 1;
+}
+h4{
+    text-align: left;
+    font: normal normal normal 20px/26px Avenir-Book;
+    letter-spacing: 0.8px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+}
+h6{
+    text-align: left;
+    font: normal normal normal 16px/26px Avenir-Book;
+    letter-spacing: 0.64px;
+    color: #565657;
+    text-transform: capitalize;
+    opacity: 1;
+}
+.login-div{
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 2.5rem;
+    margin: auto;
+}
+.login-div .btn{
+    float: left;
+}
+.register-div{
+    background: #F8F9FF 0% 0% no-repeat padding-box;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-bottom: 3rem;
+    opacity: 1;
+}
+.register-div h3{
+    text-align: left;
+    font: normal normal normal 22px/30px Avenir;
+    letter-spacing: 1.28px;
+    color: #5861AE;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.form-control, .form-select{
+    width:64%;
+    padding: 1.95rem .3rem .35rem 0;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid #ced4da;
+    border-radius: 0;
+    text-align: left;
+    font: normal normal normal 17px/27px Open Sans;
+    letter-spacing: 0.6px;
+    color: #77838F;
+    opacity: 1;
+}
+.form-select{
+    background-position: right 0.75rem bottom 0.8rem;
+}
+.form-control:focus, .form-select:focus{
+    background-color: inherit;
+    box-shadow: none;
+}
+.form-check-input:focus{
+    box-shadow:none;
+}
+.form-check-input{
+    margin-right: 0.7rem;
+}

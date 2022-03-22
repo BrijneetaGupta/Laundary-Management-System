@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {Route, Routes} from 'react-router-dom';
+import Login from './components/Login';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import UserFooter from './components/UserFooter';
+import Register from './components/Register';
+import DashboardSidebar from './components/DashboradSidebar';
+import CreateOrder from './components/CreateOrder';
+import PastOrder from './components/PastOrder';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {/* <DashboardSidebar />
+      <CreateOrder /> */}
+      {/* <PastOrder /> */}
+
+      <Routes>
+        <Route path="/" element={<Login />} />        
+      </Routes>
+      
+      <Routes>
+        <Route path="/register" element={<Register />} />        
+      </Routes>
+      
+      <Footer></Footer>
+      <UserFooter></UserFooter>
+
     </div>
   );
 }
