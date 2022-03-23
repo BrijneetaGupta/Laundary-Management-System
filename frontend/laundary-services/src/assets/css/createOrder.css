@@ -55,6 +55,14 @@
 .quantity::after{
     display: none;
 }
+#createOrder h5, #pastOrder h5{
+  text-align: left;
+  font: normal normal 600 16px/48px Open Sans;
+  letter-spacing: 0px;
+  color: #1E2022;
+  margin-left: 4.6rem;
+  opacity: 1;
+}
 #createOrder ul li{
     display:inline-block;
     list-style-type: none;
@@ -194,4 +202,13 @@ p{
 }
 .proceedCancelBtn{
   margin-bottom: 5rem;
+}
+
+#pastOrder, #createOrder{
+  min-height: 550px;
+}
+
+#pastOrder .navbar-btn{
+  background: none;
+  border: none;
 }

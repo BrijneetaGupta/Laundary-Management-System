@@ -2,12 +2,18 @@ import React from 'react'
 import '../assets/css/createOrder.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import DashboardSidebar from './DashboradSidebar';
+import Search from './Search';
+import Eye from '../assets/uploads/icons/eye.png';
 
 const PastOrder = () =>{
     return(
-        <>            
-            <section>
-            <table className="table product_list mt-5">
+        <>    
+            <DashboardSidebar />        
+            <section id="pastOrder">
+            <h5 className='mt-4'>Orders | <label className='orderCount'>1</label></h5>
+            <Search />
+            <table className="table product_list mt-2">
                 <thead className='table-dark'>
                     <tr>
                         <th scope="col">Order Id</th>
@@ -31,7 +37,7 @@ const PastOrder = () =>{
                         <td>10</td>
                         <td>430 Rs</td>
                         <td>Ready to Pickup</td>
-                        <td><button className='btn btn-filled navbar-btn pull-left' type="button" data-toggle="modal" data-target="#sidebar-right">Click</button></td>
+                        <td><button className='navbar-btn pull-left' type="button" data-toggle="modal" data-target="#sidebar-right"><img src={Eye} /></button></td>
                     </tr>                    
                 </tbody>
                 </table>                

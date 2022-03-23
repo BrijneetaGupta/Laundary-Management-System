@@ -2,6 +2,7 @@ import React from 'react'
 import '../assets/css/createOrder.css'
 import '../App.css'
 import DashboardSidebar from './DashboradSidebar';
+import Search from './Search';
 import jeans from '../assets/productImages/jeans.jpg';
 import joggers from '../assets/productImages/joggers.jpg';
 import others from '../assets/productImages/others.jpg';
@@ -257,24 +258,24 @@ const CreateOrder = () => {
                 console.log("items", totalitems)
             }
         }
-        axios({
-            url: "http://localhost:3004/orders",
-            method: "POST",
-            headers: {
-                authorization: mytoken,
-            },
-            data: {
-                "amount": amount, "totalitems": totalitems, "date": today, "status": "done ordered successfully", "services": services
-            }
+        // axios({
+        //     url: "http://localhost:3004/orders",
+        //     method: "POST",
+        //     headers: {
+        //         authorization: mytoken,
+        //     },
+        //     data: {
+        //         "amount": amount, "totalitems": totalitems, "date": today, "status": "done ordered successfully", "services": services
+        //     }
 
 
 
 
-        })
+        // })
 
-            .then(res => {
-                alert(res.data.status)
-            })
+        //     .then(res => {
+        //         alert(res.data.status)
+        //     })
     }
     const clearItem = (item) => {
         if (item === "shirt") {
@@ -324,7 +325,9 @@ const CreateOrder = () => {
         <>
             <DashboardSidebar />
             <section id="createOrder">
-                <table className="table product_list mt-5">
+                <h5 className='mt-4'>Create Order</h5>
+                <Search />
+                <table className="table product_list mt-2">
                     <thead className='table-dark'>
                         <tr>
                             <th scope="col">Product Types</th>

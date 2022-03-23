@@ -1,0 +1,25 @@
+#createOrder .form-control, #pastOrder .form-control{
+    width: 10%;
+    padding: 1.95rem 0.3rem 0.35rem 0;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid #ced4da;
+    border-radius: 0;
+    text-align: left;
+    font: normal normal normal 17px/27px Open Sans;
+    letter-spacing: 0.6px;
+    color: #77838F;
+    opacity: 1;
+    float: right;
+    right: 2rem;
+    top: 2rem;
+    position: absolute;
+  }
+  #createOrder span, #pastOrder span{
+    position: absolute;
+    top: 4rem;
+    right: 9rem;
+  }
+  #createOrder span img, #pastOrder span img{
+    width:12px
+  }

@@ -14,7 +14,9 @@ const App = () => {
     <div className="App">
       <Header />
       
-      {/* <PastOrder /> */}
+      <Routes>
+        <Route path="/pastOrder" element={<PastOrder />} />
+      </Routes>
 
       <Routes>
         <Route path="/createOrder" element={<CreateOrder />} />
