@@ -73,8 +73,18 @@
     color: #4552C1;
     text-transform: capitalize;
     opacity: 1;
+    position: absolute;
+    bottom: -47px;
+    right: 210px;
 }
 #login .btn{
     width: 150px;
     height: 50px;
+}
+#login .submit-btn{
+    float: left;
+    margin: 4rem;
+}
+#login form{
+    position: relative;
 }

@@ -3,8 +3,8 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import '../assets/css/login.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import axios from 'axios';
 import Footer from './Footer';
-import { NavLink } from 'react-router-dom';
 
 const Login = () =>{
   const navigate = useNavigate()
@@ -47,7 +47,9 @@ const Login = () =>{
                                     <input type="password" name='Password' className="form-control pl-0" id="password" placeholder="Password*" value={user.Password} onChange = {handleInputs} required/>
                                 </div>
                                 <small>Forget Password?</small>
-                                <input type="submit" name='SignIn' className='btn btn-filled' value="Sign In" onClick={login}/>
+                                <div className='submit-btn'>
+                                    <input type="submit" name='SignIn' className='btn btn-filled' value="Sign In" onClick={login}/>
+                                </div>
                             </form>
                             
                         </div>

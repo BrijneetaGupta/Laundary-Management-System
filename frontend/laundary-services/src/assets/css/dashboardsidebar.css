@@ -9,22 +9,22 @@
     overflow: auto;
   }
   
-  .sidebar a {
+  .sidebar .sidebar-link {
     display: block;
     color: #fff;
     padding: 16px;
     text-decoration: none;
   }
-  .sidebar a:first-child{
+  .sidebar .sidebar-link:first-child{
     margin-top: 30px;
   }
    
-  .sidebar a.active {
+  .sidebar .sidebar-link:nth-child(2) {
     background-color: #fff;
     color: #5861AE;
   }
   
-  .sidebar a:hover:not(.active) {
+  .sidebar .sidebar-link:hover:not(.active) {
     background-color: #555;
     color: white;
   }

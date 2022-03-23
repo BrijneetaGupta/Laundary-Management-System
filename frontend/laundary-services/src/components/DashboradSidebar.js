@@ -2,21 +2,22 @@ import React from 'react'
 import '../assets/css/dashboardsidebar.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { NavLink } from 'react-router-dom';
 
 const DashboardSidebar = () =>{
     return(
         <>            
             <section>
             <div class="sidebar">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22.002" viewBox="0 0 22 22.002">
+                <NavLink to="#" className='sidebar-link'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22.002" viewBox="0 0 22 22.002">
                     <path id="home-run_1_" data-name="home-run (1)" d="M21.409,9.57l0,0L12.432.594a2.025,2.025,0,0,0-2.865,0L.6,9.564l-.009.009a2.025,2.025,0,0,0,1.348,3.451q.031,0,.062,0h.358v6.6A2.373,2.373,0,0,0,4.727,22H8.238a.645.645,0,0,0,.645-.645V16.179A1.083,1.083,0,0,1,9.964,15.1h2.071a1.083,1.083,0,0,1,1.082,1.082v5.178a.645.645,0,0,0,.645.645h3.511a2.373,2.373,0,0,0,2.371-2.37v-6.6h.332A2.026,2.026,0,0,0,21.409,9.57Zm0,0" transform="translate(0.001)" fill="#fff"/>
                     </svg>
-                </a>
-                <a  class="active" href="/CreateOrder"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                </NavLink>
+                <NavLink  className="sidebar-link" to="/CreateOrder"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
                     <path id="more" d="M11,0A11,11,0,1,0,22,11,11.012,11.012,0,0,0,11,0Zm4.813,11.917h-3.9v3.9a.917.917,0,1,1-1.833,0v-3.9h-3.9a.917.917,0,1,1,0-1.833h3.9v-3.9a.917.917,0,1,1,1.833,0v3.9h3.9a.917.917,0,1,1,0,1.833Zm0,0" fill="#5861ae"/>
                     </svg>
-                </a>
-                <a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" width="25.283" height="18.143" viewBox="0 0 25.283 18.143">
+                </NavLink>
+                <NavLink to="/PastOrder" className='sidebar-link'><svg xmlns="http://www.w3.org/2000/svg" width="25.283" height="18.143" viewBox="0 0 25.283 18.143">
                     <g id="list" transform="translate(-1.093 -78.931)">
                         <g id="Group_5192" data-name="Group 5192" transform="translate(6.377 86.574)">
                         <g id="Group_5191" data-name="Group 5191" transform="translate(0 0)">
@@ -50,7 +51,7 @@ const DashboardSidebar = () =>{
                         </g>
                     </g>
                     </svg>
-                </a>
+                </NavLink>
             </div>
             </section>
         </>
