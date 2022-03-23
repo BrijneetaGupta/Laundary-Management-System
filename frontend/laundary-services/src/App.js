@@ -14,9 +14,9 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      {/* <DashboardSidebar />
-      <CreateOrder /> */}
-      {/* <PastOrder /> */}
+      { <DashboardSidebar />}
+      //  {<CreateOrder /> }
+      // { <PastOrder /> }
 
       <Routes>
         <Route path="/" element={<Login />} />        
