@@ -3,7 +3,8 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import '../assets/css/login.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import axios from 'axios'
+import Footer from './Footer';
+import { NavLink } from 'react-router-dom';
 
 const Login = () =>{
   const navigate = useNavigate()
@@ -27,7 +28,7 @@ const Login = () =>{
 
     return(
         <>            
-            <section>
+            <section id="login">
                 <div className='container-fluid'>
                     <div className='row'>
                         <div className='col-md-6  bg-white register-section'>
@@ -53,6 +54,7 @@ const Login = () =>{
                     </div>
                 </div>
             </section>
+            <Footer></Footer>
         </>
     )
 }

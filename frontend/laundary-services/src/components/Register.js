@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {  NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-
 const Register = () => {
   let navigate = useNavigate()
   const [user, setUser] = useState({

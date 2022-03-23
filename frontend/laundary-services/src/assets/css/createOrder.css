@@ -1,6 +1,7 @@
+.summary-modal h6{text-align:left;}
 .table{
-    width: 88%;
-    margin: auto 0 auto 140px;
+  width: 92%;
+  margin: auto 0 auto 90px;
 }
 .product_list tr{
     border-left: 1px solid #e3e3e3;
@@ -28,8 +29,8 @@
   }
   
   img {
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
     max-width: 100%
   }
   
@@ -47,19 +48,31 @@
     text-align: center;
     font-size: 15px;
 }
+.quan{
+  width:40px;
+  text-align:center;
+}
 .quantity::after{
     display: none;
 }
-ul li{
+#createOrder ul li{
     display:inline-block;
     list-style-type: none;
     padding: 0 20px;
 }
-ul li:first-child{
+#createOrder ul li:first-child{
     padding-left: 0;
 }
-ul li:last-child{
+#createOrder ul li:last-child{
     padding-right: 0;
+}
+.cont{
+  border:none;
+  background: none;
+}
+.total{
+  color:#5861AE;
+  font-size: 18px;
 }
 .btn-regular, .btn-filled{
     float: right;
@@ -69,6 +82,12 @@ ul li:last-child{
     opacity: 1;
     font-size: 14px;
     line-height: 1;
+}
+.reset{
+  color:#5861AE;
+  border-radius: 8%;
+  border-color: #b9bee9ab;
+  
 }
 .btn-cancel{
     position: absolute;
@@ -172,4 +191,7 @@ p{
     min-height: 82px;
     width: 100%;
     opacity: 1;
+}
+.proceedCancelBtn{
+  margin-bottom: 5rem;
 }

@@ -1,4 +1,4 @@
-h3{
+#footer h3{
     text-align: left;
     font: normal normal normal 18px/24px  Avenir-Book;
     font-weight: 600;
@@ -6,7 +6,7 @@ h3{
     color: #182838;
     text-transform: uppercase;
 }
-h4{
+#footer h4{
     text-align: left;
     font: normal normal normal 16px/24px  Avenir-Book;
     font-weight: 600;
@@ -15,7 +15,7 @@ h4{
     text-transform: capitalize;
     opacity: 1;
 }
-p{
+#footer p{
     font: normal normal normal 15px/20px  Avenir-Book;
     letter-spacing: 0.6px;
     color: #3D3D43;
@@ -39,18 +39,18 @@ p{
     text-align: center;
     font-size: 10px;
 }
-footer{
+#footer {
     background-image: url('../uploads/Footer.svg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px 0;
 }
-ul{
+#footer ul{
     list-style-type: none;
     padding-left: 0;
 }
-ul li{text-align: left;}
-ul li a{
+#footer ul li{text-align: left;}
+#footer ul li a{
     text-align: left;
     text-decoration: none;
     font: normal normal normal 14px/24px  Avenir-Book;
@@ -63,10 +63,7 @@ ul li a{
     background: #182838 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
-    position: fixed;
     width: 100%;
-    bottom: 0;
-    z-index:9999;
 }
 .bottom-footer label{
     text-align: center;
