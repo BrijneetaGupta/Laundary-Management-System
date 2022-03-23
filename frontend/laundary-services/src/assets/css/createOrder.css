@@ -47,6 +47,10 @@
     text-align: center;
     font-size: 15px;
 }
+.quan{
+  width:40px;
+  text-align:center;
+}
 .quantity::after{
     display: none;
 }
@@ -61,6 +65,13 @@ ul li:first-child{
 ul li:last-child{
     padding-right: 0;
 }
+.cont{
+  border:none;
+}
+.total{
+  color:#5861AE;
+  font-size: 18px;
+}
 .btn-regular, .btn-filled{
     float: right;
     width: 81px;
@@ -69,6 +80,12 @@ ul li:last-child{
     opacity: 1;
     font-size: 14px;
     line-height: 1;
+}
+.reset{
+  color:#5861AE;
+  border-radius: 8%;
+  border-color: #b9bee9ab;
+  
 }
 .btn-cancel{
     position: absolute;
