@@ -1,10 +1,30 @@
-import React from 'react'
+import React,{useState} from 'react'
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../assets/css/login.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { NavLink } from 'react-router-dom';
+import axios from 'axios'
 
 const Login = () =>{
+  const navigate = useNavigate()
+    const [user,setUser] = useState({
+        Email:"",Password:""
+    });
+    
+    const handleInputs = (e)=>{
+        const {name,value} = e.target
+        setUser({...user,[name]:value})
+    }
+    const login = ()=>{
+        axios.post("http://localhost:9002/login",user)
+        .then((res)=>{
+            alert(res.data.message)
+           navigate("./CreateOrder.js")
+        })
+            
+        .catch(e=>console.log("Not able to connect backend"))
+    }
+
     return(
         <>            
             <section>
@@ -18,16 +38,17 @@ const Login = () =>{
                         </div>
                         <div className='col-md-6 login-section'>
                             <h3>Sign in</h3>
-                            <form className='mb-5' method="Post">
+                            <form className='mb-5'>
                                 <div className="form-group">
-                                    <input type="email" className="form-control pl-0" id="email" placeholder="Mobile / Email" />                                    
+                                    <input type="text" name='Email' className="form-control pl-0" id="email" placeholder="Mobile / Email*" value={user.Email} onChange = {handleInputs} required/>                                    
                                 </div>
                                 <div className="form-group">
-                                    <input type="password" className="form-control pl-0" id="password" placeholder="Password" />
+                                    <input type="password" name='Password' className="form-control pl-0" id="password" placeholder="Password*" value={user.Password} onChange = {handleInputs} required/>
                                 </div>
                                 <small>Forget Password?</small>
+                                <input type="submit" name='SignIn' className='btn btn-filled' value="Sign In" onClick={login}/>
                             </form>
-                            <button className='btn btn-filled'>Sign In</button>
+                            
                         </div>
                     </div>
                 </div>
