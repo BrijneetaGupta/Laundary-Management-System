@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/css/createOrder.css'
 import '../App.css'
+import DashboardSidebar from './DashboradSidebar';
 import jeans from '../assets/productImages/jeans.jpg';
 import joggers from '../assets/productImages/joggers.jpg';
 import others from '../assets/productImages/others.jpg';
@@ -316,6 +317,7 @@ const CreateOrder = () => {
 
     return (
         <>
+            <DashboardSidebar />
             <section>
                 <table className="table product_list mt-5">
                     <thead className='table-dark'>
