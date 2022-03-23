@@ -10,7 +10,7 @@ const Footer = () =>{
                 <h2>Now Refer & Earn ₹500 for every referral*</h2>
                 <p className='mb-0'>* Terms and conditions will be applied</p>
             </div>
-            <footer>
+            <footer id="footer">
                 <div className='container'>                    
                     <div className='row'>
                         <div className='col-md-4'>
