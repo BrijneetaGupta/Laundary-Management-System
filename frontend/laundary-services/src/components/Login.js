@@ -16,14 +16,25 @@ const Login = () =>{
         const {name,value} = e.target
         setUser({...user,[name]:value})
     }
-    const login = ()=>{
-        axios.post("http://localhost:9002/login",user)
-        .then((res)=>{
-            alert(res.data.message)
-           navigate("./CreateOrder.js")
+    const login =async (e)=>{
+        e.preventDefault();
+        const {Email,Password } = user;
+        const res =  await fetch("/login",{
+          method:"POST",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body:JSON.stringify({
+            Email, Password
+          })
         })
-            
-        .catch(e=>console.log("Not able to connect backend"))
+       const  result = await res.json();
+       if(result.status===400 || !result){
+         window.alert("Invallid Registration")
+       }else{
+        window.alert("Registration Successful")
+        navigate("/CreateOrder")
+       }
     }
 
     return(
