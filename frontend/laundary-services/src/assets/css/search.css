@@ -15,11 +15,11 @@
     top: 2rem;
     position: absolute;
   }
-  #createOrder span, #pastOrder span{
+  #createOrder .search-div, #pastOrder .search-div{
     position: absolute;
     top: 4rem;
     right: 9rem;
   }
-  #createOrder span img, #pastOrder span img{
+  #createOrder .search-div img, #pastOrder .search-div img{
     width:12px
   }
