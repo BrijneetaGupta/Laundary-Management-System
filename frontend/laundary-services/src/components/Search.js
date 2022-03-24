@@ -7,7 +7,7 @@ import search from '../assets/uploads/icons/search.svg';
 const Search = () =>{
     return(
         <>
-            <span>
+            <span className='search-div'>
                 <img src={search} alt="search" />
             </span>
             <input type='text' className="form-control" />
