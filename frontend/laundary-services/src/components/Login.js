@@ -3,7 +3,6 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import '../assets/css/login.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import axios from 'axios';
 import Footer from './Footer';
 
 const Login = () =>{
@@ -19,6 +18,7 @@ const Login = () =>{
     const login =async (e)=>{
         e.preventDefault();
         const {Email,Password } = user;
+        console.log(Email,Password)
         const res =  await fetch("/login",{
           method:"POST",
           headers:{
@@ -29,10 +29,11 @@ const Login = () =>{
           })
         })
        const  result = await res.json();
-       if(result.status===400 || !result){
-         window.alert("Invallid Registration")
+       console.log(result)
+       if(res.status === 400 || !result){
+         window.alert("INVALID USER")
        }else{
-        window.alert("Registration Successful")
+        window.alert("LOGIN SUCCESSFUL")
         navigate("/CreateOrder")
        }
     }

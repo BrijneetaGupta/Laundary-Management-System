@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "../assets/css/register.css";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
-  let navigate = useNavigate()
+  let navigate = useNavigate();
   const [user, setUser] = useState({
     Name: "",
     Email: "",
@@ -22,43 +22,39 @@ const Register = () => {
     const { name, value } = e.target;
     setUser({ ...user, [name]: value });
   };
-  // const toRegister = () => {
-  //   const { Name, Email, Phone, State, District, Address, Pincode, Password } =
-  //     user;
-  //   if (Name && Email && Phone && State && District && Address && Pincode && Password){
-  //     axios.post("http://localhost:9002/registers", user)
-  //       .then((res) => {
-  //         console.log(res)
-  //       }).catch((e) => {
-  //         console.log(e);
-  //       });
-  //   } else {
-  //     alert("Invallid Inputs");
-  //   }
-  // };
- const toRegister = async (e)=>{
-   e.preventDefault();
-   const { Name, Email, Phone, State, District, Address, Pincode, Password } = user;
-  const res =  await fetch("/registers",{
-    method:"POST",
-    headers:{
-      "Content-Type":"application/json"
-    },
-    body:JSON.stringify({
-      Name, Email, Phone, State, District, Address, Pincode, Password
-    })
-  })
- const  result = await res.json();
- if(result.status===422 || !result){
-   window.alert("Invallid Registration")
- }else{
-  window.alert("Registration Successful")
-  navigate("/")
- }
- }
+
+  const toRegister = async (e) => {
+    e.preventDefault();
+    const { Name, Email, Phone, State, District, Address, Pincode, Password } =
+      user;
+    const res = await fetch("/registers", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        Name,
+        Email,
+        Phone,
+        State,
+        District,
+        Address,
+        Pincode,
+        Password,
+      }),
+    });
+    const result = await res.json();
+    console.log(result.status);
+    if (res.status === 422 || !result) {
+      window.alert("Data not fill properly or Email already Exist");
+    } else {
+      window.alert("Registration Successful");
+      navigate("/");
+    }
+  };
   return (
     <>
-      <section>
+      <section id="register">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-3 login-div bg-white">
@@ -71,7 +67,7 @@ const Register = () => {
             </div>
             <div className="col-md-9 register-div">
               <h3>Register</h3>
-              <form>
+              <form method="post">
                 <div className="row">
                   <div className="col">
                     <input
@@ -99,7 +95,7 @@ const Register = () => {
                 <div className="row">
                   <div className="col">
                     <input
-                      type="text"
+                      type="number"
                       className="form-control"
                       placeholder="Phone*"
                       value={user.Phone}
