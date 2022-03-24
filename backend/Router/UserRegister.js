@@ -12,6 +12,7 @@ router.post("/registers",async(req,res)=>{
     }
     try{
         const userExist = await UserData.findOne({Email:Email});
+        console.log(userExist)
         if(userExist){
             return res.status(422).json({error:"Email already Exist"})
         }else{
