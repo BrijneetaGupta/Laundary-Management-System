@@ -4,6 +4,7 @@ import '../assets/css/login.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from './Footer';
+//import Create from './Createorder/Create';
 
 const Login = () =>{
   const navigate = useNavigate()
@@ -34,7 +35,8 @@ const Login = () =>{
          window.alert("INVALID USER")
        }else{
         window.alert("LOGIN SUCCESSFUL")
-        navigate("/CreateOrder")
+        // navigate("/CreateOrder")
+        navigate('/create')
        }
     }
 
