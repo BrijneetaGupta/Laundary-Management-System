@@ -1,7 +1,7 @@
 import React from 'react'
 import '../assets/css/createOrder.css'
 import '../App.css'
-import DashboardSidebar from './DashboradSidebar';
+import DashboardSidebar from './DashboardSidebar';
 import Search from './Search';
 import jeans from '../assets/productImages/jeans.jpg';
 import joggers from '../assets/productImages/joggers.jpg';
