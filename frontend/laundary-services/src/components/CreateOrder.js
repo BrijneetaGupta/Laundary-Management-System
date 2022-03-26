@@ -658,10 +658,10 @@ const CreateOrder = () => {
                             <h4 class="modal-title">Summary</h4>
                         </div>
                         <div class="modal-body">
-                            <div className="store" Style="    background-color: #F4F9FF;">
+                            <div className="store mb-3" Style="    background-color: #F4F9FF;">
                                 <div className="storeloc">
                                     <form className='store__form'>
-                                        <select defaultValue="Store Location">
+                                        <select className='form-select' defaultValue="Store Location">
                                         <option selected> </option>
                                             <option disabled>Store Location</option>
                                             <option className='store__option'>Jp Nagar</option>

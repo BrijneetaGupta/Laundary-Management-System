@@ -22,7 +22,7 @@ function Create() {
                         <span > No Orders Available</span>
                     </div>
                     <Link to="/createOrder">
-                    <button className='orderButton'>Create</button>
+                    <button className='btn btn-regular orderButton'>Create</button>
                     </Link>
                 </div>
             </div>

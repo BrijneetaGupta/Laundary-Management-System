@@ -60,6 +60,7 @@ input:focus{
     opacity: 0.5;
 }
 .orderButton{
+    float:none;
     left: 695px;
     width: 107px;
     height: 32px;

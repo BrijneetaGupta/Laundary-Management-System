@@ -51,7 +51,7 @@ const PastOrder = () =>{
                             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title">Summary</h4>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body pt-3">
                             <h6>Order Details</h6>
                             <table className="table mt-2">
                                 <tbody>
@@ -99,13 +99,6 @@ const PastOrder = () =>{
                                     <div className='card'>
                                         <h6>Home</h6>
                                         <p className='mb-0'>#223, 10th road, Jp Nagar, Bangalore</p>
-                                    </div>
-                                    <div className='card'>
-                                        <h6>Other</h6>
-                                        <p className='mb-0'>#223, 10th road, Jp Nagar, Bangalore</p>
-                                    </div>
-                                    <div className='add-more'>
-                                        <a href="#">Add New</a>
                                     </div>
                                 </div>
                             </section>

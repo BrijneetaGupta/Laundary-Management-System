@@ -120,6 +120,10 @@ p{
 }
 
 /* MOdal */
+.modal-body{
+  padding-top: 0;
+    padding-bottom: 0;
+}
 .summary-modal.fade:not(.in).right .modal-dialog {
     transform: translate3d(5%, 0, 0);
   }
@@ -195,8 +199,8 @@ p{
     background: #F4F4F4 0% 0% no-repeat padding-box;
     box-shadow: 0px -3px 6px #00000015;
     position: fixed;
-    bottom: 20px;
-    min-height: 82px;
+    bottom: 0px;
+    min-height: 60px;
     width: 100%;
     opacity: 1;
 }
@@ -213,8 +217,32 @@ p{
   font-size: 14px;
 }
 
-
-
+.store{
+  padding-bottom: 22px;
+}
+.store a{
+  text-align: left;
+  font: normal normal 600 16px/22px Open Sans;
+  letter-spacing: 0.38px;
+  color: #1B2734;
+  opacity: 1;
+}
+.store .form-select{
+  width:64%;
+  padding: 1.95rem .3rem .35rem 0;
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid #ced4da;
+  border-radius: 0;
+  text-align: left;
+  font: normal normal normal 17px/27px Open Sans;
+  letter-spacing: 0.6px;
+  color: #77838F;
+  opacity: 1;
+}
+.store .form-select{
+  background-position: right 0.05rem bottom 0.7rem;
+}
 #pastOrder, #createOrder{
   min-height: 550px;
 }
