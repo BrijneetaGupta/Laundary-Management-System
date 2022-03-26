@@ -203,6 +203,17 @@ p{
 .proceedCancelBtn{
   margin-bottom: 5rem;
 }
+.storeloc,
+.storeadd,
+.storephone {
+  display:inline-block;
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  font-size: 14px;
+}
+
+
 
 #pastOrder, #createOrder{
   min-height: 550px;

@@ -2,7 +2,7 @@ import React from 'react'
 import '../assets/css/createOrder.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import DashboardSidebar from './DashboardSidebar';
+import DashboardSidebar from './DashboradSidebar';
 import Search from './Search';
 import Eye from '../assets/uploads/icons/eye.png';
 

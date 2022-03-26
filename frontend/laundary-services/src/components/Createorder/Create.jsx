@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import DashboardSidebar from '../DashboardSidebar';
-import Search from '../Createorder/../Search'
-import search from './search.svg'
+import DashboardSidebar from '../DashboradSidebar';
 import './create.css'
+import { Link } from "react-router-dom";
 function Create() {
 
     return (
@@ -22,7 +21,9 @@ function Create() {
                     <div className="text">
                         <span > No Orders Available</span>
                     </div>
+                    <Link to="/createOrder">
                     <button className='orderButton'>Create</button>
+                    </Link>
                 </div>
             </div>
 
