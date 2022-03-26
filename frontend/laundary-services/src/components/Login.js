@@ -4,6 +4,7 @@ import '../assets/css/login.css'
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Footer from './Footer';
+import lock from '../assets/uploads/icons/padlock.svg';
 //import Create from './Createorder/Create';
 
 const Login = () =>{
@@ -58,7 +59,7 @@ const Login = () =>{
                                     <input type="text" name='Email' className="form-control pl-0" id="email" placeholder="Mobile / Email*" value={user.Email} onChange = {handleInputs} required/>                                    
                                 </div>
                                 <div className="form-group">
-                                    <input type="password" name='Password' className="form-control pl-0" id="password" placeholder="Password*" value={user.Password} onChange = {handleInputs} required/>
+                                    <input type="password" name='Password' className="form-control pl-0" id="password" placeholder="Password*" value={user.Password} onChange = {handleInputs} required/> <label><img src={lock} /></label>
                                 </div>
                                 <small>Forget Password?</small>
                                 <div className='submit-btn'>
