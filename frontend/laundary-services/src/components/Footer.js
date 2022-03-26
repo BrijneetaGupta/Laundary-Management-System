@@ -1,7 +1,10 @@
 import React from 'react'
 import '../assets/css/footer.css'
 import '../App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import facebook from '../assets/uploads/icons/facebook.svg';
+import instagram from '../assets/uploads/icons/instagram.svg';
+import linkedin from '../assets/uploads/icons/linkedin.svg';
 
 const Footer = () =>{
     return(
@@ -43,19 +46,23 @@ const Footer = () =>{
                         </div>
                         <div className='col-md-3'>
                             <h3>Social Media</h3>
-                            <div class="social-div">
-                                <ul class="social-links">
+                            <div className="social-div">
+                                <ul className="social-links">
                                     <li>
-                                        <a class="facebook" href="">
-                                        {/* <img src="../assets/uploads/Footer.svg" width="30" height="30" /> */}
+                                        <a href="">
+                                        <img src={facebook} width="30" height="30" />
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="instagram" href="">
-                                            <i class="fa fa-instagram"></i>
+                                    <a href="">
+                                        <img src={instagram} width="30" height="30" />
                                         </a>
                                     </li>
-                                    
+                                    <li>
+                                    <a href="">
+                                        <img src={linkedin} width="30" height="30" />
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

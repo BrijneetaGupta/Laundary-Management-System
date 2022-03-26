@@ -367,7 +367,7 @@ const CreateOrder = () => {
                                     </div>
                                     <div class="text">
                                         <h6 className='mb-0'>Shirts</h6>
-                                        <p className='mb-0'>Paris is the most beautiful city.</p>
+                                        <p className='mb-0'>Lorem Ipsum is simply dummy text of the</p>
                                     </div>
                                 </div>
 
@@ -409,7 +409,7 @@ const CreateOrder = () => {
                                     </div>
                                     <div class="text">
                                         <h6 className='mb-0'>T Shirts</h6>
-                                        <p className='mb-0'>Paris is the most beautiful city.</p>
+                                        <p className='mb-0'>Lorem Ipsum is simply dummy text of the</p>
                                     </div>
                                 </div>
 
@@ -450,7 +450,7 @@ const CreateOrder = () => {
                                     </div>
                                     <div class="text">
                                         <h6 className='mb-0'>Trousers</h6>
-                                        <p className='mb-0'>Paris is the most beautiful city.</p>
+                                        <p className='mb-0'>Lorem Ipsum is simply dummy text of the</p>
                                     </div>
                                 </div>
 
@@ -489,7 +489,7 @@ const CreateOrder = () => {
                                     </div>
                                     <div class="text">
                                         <h6 className='mb-0'>Jeans</h6>
-                                        <p className='mb-0'>Paris is the most beautiful city.</p>
+                                        <p className='mb-0'>Lorem Ipsum is simply dummy text of the</p>
                                     </div>
                                 </div>
 
@@ -528,7 +528,7 @@ const CreateOrder = () => {
                                     </div>
                                     <div class="text">
                                         <h6 className='mb-0'>Jogger</h6>
-                                        <p className='mb-0'>Paris is the most beautiful city.</p>
+                                        <p className='mb-0'>Lorem Ipsum is simply dummy text of the</p>
                                     </div>
                                 </div>
 
@@ -567,7 +567,7 @@ const CreateOrder = () => {
                                     </div>
                                     <div class="text">
                                         <h6 className='mb-0'>Boxers</h6>
-                                        <p className='mb-0'>Paris is the most beautiful city.</p>
+                                        <p className='mb-0'>Lorem Ipsum is simply dummy text of the</p>
                                     </div>
                                 </div>
 
@@ -609,7 +609,7 @@ const CreateOrder = () => {
                                     </div>
                                     <div class="text">
                                         <h6 className='mb-0'>Others</h6>
-                                        <p className='mb-0'>Paris is the most beautiful city.</p>
+                                        <p className='mb-0'>Lorem Ipsum is simply dummy text of the</p>
                                     </div>
                                 </div>
 
