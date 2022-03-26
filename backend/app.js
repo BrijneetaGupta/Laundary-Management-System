@@ -40,5 +40,5 @@ app.use("/orders",(req,res,next)=>{
 })
 app.use(userRouter)
 app.use('/',orders)
-app.listen(process.env.PORT || 5000,()=>{ console.log(` server listening on ${5000}`);
+app.listen(process.env.PORT || 9002,()=>{ console.log(` server listening on ${5000}`);
 })

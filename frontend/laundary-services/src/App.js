@@ -8,6 +8,7 @@ import UserFooter from './components/UserFooter';
 import Register from './components/Register';
 import CreateOrder from './components/CreateOrder';
 import PastOrder from './components/PastOrder';
+import Create from './components/Createorder/Create';
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Login />} />        
+      </Routes>
+      <Routes>
+        <Route path="/create" element={<Create />} />        
       </Routes>
       
       <Routes>
