@@ -40,5 +40,13 @@ app.use("/orders",(req,res,next)=>{
 })
 app.use(userRouter)
 app.use('/',orders)
-app.listen(process.env.PORT || 9002,()=>{ console.log(` server listening on ${5000}`);
+
+
+// step 3 : heroku
+if(process.env.NODE_ENV == 'production'){
+    app.use(express.static("frontend/build"));
+}
+
+
+app.listen(process.env.PORT || 9002,()=>{ console.log(` server listening on ${9002}`);
 })
